@@ -138,7 +138,7 @@ java_sdk_library_import {
 
 module_java_sdk_library_import {
     name: "conscrypt.module.public.api",
-    prefer: true,
+    prefer: false,
     soong_config_variables: {
         module_build_from_source: {
             prefer: false,
@@ -188,7 +188,7 @@ java_sdk_library_import {
 
 module_java_sdk_library_import {
     name: "conscrypt.module.platform.api",
-    prefer: true,
+    prefer: false,
     soong_config_variables: {
         module_build_from_source: {
             prefer: false,
@@ -235,7 +235,7 @@ java_sdk_library_import {
 
 module_java_sdk_library_import {
     name: "conscrypt.module.intra.core.api",
-    prefer: true,
+    prefer: false,
     soong_config_variables: {
         module_build_from_source: {
             prefer: false,
@@ -318,7 +318,7 @@ cc_prebuilt_library_shared {
 
 module_cc_prebuilt_library_shared {
     name: "libconscrypt_jni",
-    prefer: true,
+    prefer: false,
     soong_config_variables: {
         module_build_from_source: {
             prefer: false,
