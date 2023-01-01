@@ -6,9 +6,6 @@ Lcom/android/org/conscrypt/AbstractConscryptSocket;->setSoWriteTimeout(I)V,maxTa
 Lcom/android/org/conscrypt/AbstractConscryptSocket;->getSoWriteTimeout()I,maxTargetSdk=30&trackingBug=170729553L
 Lcom/android/org/conscrypt/AbstractConscryptSocket;->setHandshakeTimeout(I)V,maxTargetSdk=30&trackingBug=170729553L
 Lcom/android/org/conscrypt/AbstractConscryptSocket;->setUseSessionTickets(Z)V,maxTargetSdk=29&publicAlternatives=%22Use+%7B%40link+android.net.ssl.SSLSockets%23setUseSessionTickets%7D.%22
-Lcom/android/org/conscrypt/AbstractConscryptSocket;->setChannelIdEnabled(Z)V,maxTargetSdk=30&trackingBug=170729553L
-Lcom/android/org/conscrypt/AbstractConscryptSocket;->getChannelId()[B,maxTargetSdk=30&trackingBug=170729553L
-Lcom/android/org/conscrypt/AbstractConscryptSocket;->setChannelIdPrivateKey(Ljava/security/PrivateKey;)V,maxTargetSdk=30&trackingBug=170729553L
 Lcom/android/org/conscrypt/AbstractConscryptSocket;->getAlpnSelectedProtocol()[B,maxTargetSdk=29&publicAlternatives=%22Use+%7B%40code+javax.net.ssl.SSLSocket%23getApplicationProtocol%28%29%7D.%22
 Lcom/android/org/conscrypt/AbstractConscryptSocket;->setAlpnProtocols([Ljava/lang/String;)V,maxTargetSdk=29&publicAlternatives=%22Use+%7B%40code+javax.net.ssl.SSLParameters%23setApplicationProtocols%28java.lang.String%5B%5D%29%7D.%22
 Lcom/android/org/conscrypt/AbstractConscryptSocket;->setAlpnProtocols([B)V,maxTargetSdk=29&publicAlternatives=%22Use+%7B%40code+javax.net.ssl.SSLParameters%23setApplicationProtocols%28java.lang.String%5B%5D%29%7D.%22
@@ -90,8 +87,6 @@ Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setSoWriteTimeout(I)V,maxTargetSd
 Lcom/android/org/conscrypt/OpenSSLSocketImpl;->getSoWriteTimeout()I,maxTargetSdk=30&trackingBug=170729553L
 Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setHandshakeTimeout(I)V,maxTargetSdk=30&trackingBug=170729553L
 Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setUseSessionTickets(Z)V,maxTargetSdk=29&publicAlternatives=%22Use+%7B%40link+android.net.ssl.SSLSockets%23setUseSessionTickets%7D.%22
-Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setChannelIdEnabled(Z)V,maxTargetSdk=30&trackingBug=170729553L
-Lcom/android/org/conscrypt/OpenSSLSocketImpl;->getChannelId()[B,maxTargetSdk=30&trackingBug=170729553L
 Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setChannelIdPrivateKey(Ljava/security/PrivateKey;)V,maxTargetSdk=30&trackingBug=170729553L
 Lcom/android/org/conscrypt/OpenSSLSocketImpl;->getNpnSelectedProtocol()[B,
 Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setNpnProtocols([B)V,
