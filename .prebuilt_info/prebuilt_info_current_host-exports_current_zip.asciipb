@@ -1,18 +1,6 @@
 drops {
   android_build_drop {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    build_id: "T1009772"
-||||||| merged common ancestors
-    build_id: "T1010120"
-=======
-    build_id: "T1010137"
->>>>>>> c0accb7eb08a24fcfafdf47def2537a0a375f284
-||||||| c0accb7
-    build_id: "T1010137"
-=======
-    build_id: "T1010146"
->>>>>>> db3059414432fcd9c631a3ea2e152b01b39c4f56
+    build_id: "T1010164"
     target: "train_build"
     source_file: "mainline-sdks/for-latest-build/current/com.google.android.conscrypt/host-exports/conscrypt-module-host-exports-current.zip"
   }
