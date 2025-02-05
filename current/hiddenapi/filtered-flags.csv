@@ -1,3 +1,5 @@
+Landroid/net/ssl/PakeServerKeyManagerParameters$Link;->equals(Ljava/lang/Object;)Z,core-platform-api,public-api,sdk,system-api,test-api
+Landroid/net/ssl/PakeServerKeyManagerParameters$Link;->hashCode()I,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/net/ssl/SSLEngines;->exportKeyingMaterial(Ljavax/net/ssl/SSLEngine;Ljava/lang/String;[BI)[B,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/net/ssl/SSLEngines;->isSupportedEngine(Ljavax/net/ssl/SSLEngine;)Z,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/net/ssl/SSLEngines;->setUseSessionTickets(Ljavax/net/ssl/SSLEngine;Z)V,core-platform-api,public-api,sdk,system-api,test-api
@@ -115,6 +117,13 @@ Lcom/android/org/conscrypt/ActiveSession;->invalidate()V,core-platform-api,publi
 Lcom/android/org/conscrypt/ActiveSession;->isValid()Z,core-platform-api,public-api,sdk,system-api,test-api
 Lcom/android/org/conscrypt/ActiveSession;->putValue(Ljava/lang/String;Ljava/lang/Object;)V,core-platform-api,public-api,sdk,system-api,test-api
 Lcom/android/org/conscrypt/ActiveSession;->removeValue(Ljava/lang/String;)V,core-platform-api,public-api,sdk,system-api,test-api
+Lcom/android/org/conscrypt/AndroidHpkeSpi;->engineExport(I[B)[B,core-platform-api,public-api,sdk,system-api,test-api
+Lcom/android/org/conscrypt/AndroidHpkeSpi;->engineInitRecipient([BLjava/security/PrivateKey;[BLjava/security/PublicKey;[B[B)V,core-platform-api,public-api,sdk,system-api,test-api
+Lcom/android/org/conscrypt/AndroidHpkeSpi;->engineInitSender(Ljava/security/PublicKey;[BLjava/security/PrivateKey;[B[B)V,core-platform-api,public-api,sdk,system-api,test-api
+Lcom/android/org/conscrypt/AndroidHpkeSpi;->engineInitSenderWithSeed(Ljava/security/PublicKey;[BLjava/security/PrivateKey;[B[B[B)V,core-platform-api,public-api,sdk,system-api,test-api
+Lcom/android/org/conscrypt/AndroidHpkeSpi;->engineOpen([B[B)[B,core-platform-api,public-api,sdk,system-api,test-api
+Lcom/android/org/conscrypt/AndroidHpkeSpi;->engineSeal([B[B)[B,core-platform-api,public-api,sdk,system-api,test-api
+Lcom/android/org/conscrypt/AndroidHpkeSpi;->getEncapsulated()[B,core-platform-api,public-api,sdk,system-api,test-api
 Lcom/android/org/conscrypt/ApplicationProtocolSelector;-><init>()V,lo-prio,max-target-o
 Lcom/android/org/conscrypt/ApplicationProtocolSelector;->selectApplicationProtocol(Ljavax/net/ssl/SSLEngine;Ljava/util/List;)Ljava/lang/String;,lo-prio,max-target-o
 Lcom/android/org/conscrypt/ApplicationProtocolSelector;->selectApplicationProtocol(Ljavax/net/ssl/SSLSocket;Ljava/util/List;)Ljava/lang/String;,lo-prio,max-target-o
@@ -508,6 +517,7 @@ Lcom/android/org/conscrypt/OAEPParameters;->engineInit([B)V,core-platform-api,pu
 Lcom/android/org/conscrypt/OAEPParameters;->engineInit([BLjava/lang/String;)V,core-platform-api,public-api,sdk,system-api,test-api
 Lcom/android/org/conscrypt/OAEPParameters;->engineToString()Ljava/lang/String;,core-platform-api,public-api,sdk,system-api,test-api
 Lcom/android/org/conscrypt/OpenSSLAeadCipher;->engineDoFinal(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)I,core-platform-api,public-api,sdk,system-api,test-api
+Lcom/android/org/conscrypt/OpenSSLAeadCipher;->engineDoFinal([BII)[B,core-platform-api,public-api,sdk,system-api,test-api
 Lcom/android/org/conscrypt/OpenSSLAeadCipher;->engineDoFinal([BII[BI)I,core-platform-api,public-api,sdk,system-api,test-api
 Lcom/android/org/conscrypt/OpenSSLAeadCipher;->engineUpdateAAD(Ljava/nio/ByteBuffer;)V,core-platform-api,public-api,sdk,system-api,test-api
 Lcom/android/org/conscrypt/OpenSSLAeadCipher;->engineUpdateAAD([BII)V,core-platform-api,public-api,sdk,system-api,test-api
@@ -523,8 +533,6 @@ Lcom/android/org/conscrypt/OpenSSLBaseDHKeyAgreement;->engineGenerateSecret(Ljav
 Lcom/android/org/conscrypt/OpenSSLBaseDHKeyAgreement;->engineGenerateSecret([BI)I,core-platform-api,public-api,sdk,system-api,test-api
 Lcom/android/org/conscrypt/OpenSSLBaseDHKeyAgreement;->engineInit(Ljava/security/Key;Ljava/security/SecureRandom;)V,core-platform-api,public-api,sdk,system-api,test-api
 Lcom/android/org/conscrypt/OpenSSLBaseDHKeyAgreement;->engineInit(Ljava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V,core-platform-api,public-api,sdk,system-api,test-api
-Lcom/android/org/conscrypt/OpenSSLCipher;->engineDoFinal([BII)[B,core-platform-api,public-api,sdk,system-api,test-api
-Lcom/android/org/conscrypt/OpenSSLCipher;->engineDoFinal([BII[BI)I,core-platform-api,public-api,sdk,system-api,test-api
 Lcom/android/org/conscrypt/OpenSSLCipher;->engineGetBlockSize()I,core-platform-api,public-api,sdk,system-api,test-api
 Lcom/android/org/conscrypt/OpenSSLCipher;->engineGetIV()[B,core-platform-api,public-api,sdk,system-api,test-api
 Lcom/android/org/conscrypt/OpenSSLCipher;->engineGetKeySize(Ljava/security/Key;)I,core-platform-api,public-api,sdk,system-api,test-api
@@ -539,6 +547,8 @@ Lcom/android/org/conscrypt/OpenSSLCipher;->engineUnwrap([BLjava/lang/String;I)Lj
 Lcom/android/org/conscrypt/OpenSSLCipher;->engineUpdate([BII)[B,core-platform-api,public-api,sdk,system-api,test-api
 Lcom/android/org/conscrypt/OpenSSLCipher;->engineUpdate([BII[BI)I,core-platform-api,public-api,sdk,system-api,test-api
 Lcom/android/org/conscrypt/OpenSSLCipher;->engineWrap(Ljava/security/Key;)[B,core-platform-api,public-api,sdk,system-api,test-api
+Lcom/android/org/conscrypt/OpenSSLCipherChaCha20;->engineDoFinal([BII)[B,core-platform-api,public-api,sdk,system-api,test-api
+Lcom/android/org/conscrypt/OpenSSLCipherChaCha20;->engineDoFinal([BII[BI)I,core-platform-api,public-api,sdk,system-api,test-api
 Lcom/android/org/conscrypt/OpenSSLCipherRSA$OAEP;->engineGetParameters()Ljava/security/AlgorithmParameters;,core-platform-api,public-api,sdk,system-api,test-api
 Lcom/android/org/conscrypt/OpenSSLCipherRSA$OAEP;->engineInit(ILjava/security/Key;Ljava/security/AlgorithmParameters;Ljava/security/SecureRandom;)V,core-platform-api,public-api,sdk,system-api,test-api
 Lcom/android/org/conscrypt/OpenSSLCipherRSA$OAEP;->engineInit(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V,core-platform-api,public-api,sdk,system-api,test-api
@@ -602,6 +612,8 @@ Lcom/android/org/conscrypt/OpenSSLECPublicKey;->readObject(Ljava/io/ObjectInputS
 Lcom/android/org/conscrypt/OpenSSLECPublicKey;->serialVersionUID:J,sdk
 Lcom/android/org/conscrypt/OpenSSLECPublicKey;->toString()Ljava/lang/String;,core-platform-api,public-api,sdk,system-api,test-api
 Lcom/android/org/conscrypt/OpenSSLECPublicKey;->writeObject(Ljava/io/ObjectOutputStream;)V,sdk
+Lcom/android/org/conscrypt/OpenSSLEvpCipher;->engineDoFinal([BII)[B,core-platform-api,public-api,sdk,system-api,test-api
+Lcom/android/org/conscrypt/OpenSSLEvpCipher;->engineDoFinal([BII[BI)I,core-platform-api,public-api,sdk,system-api,test-api
 Lcom/android/org/conscrypt/OpenSSLKey;-><init>(J)V,unsupported
 Lcom/android/org/conscrypt/OpenSSLKey;-><init>(JZ)V,lo-prio,max-target-o
 Lcom/android/org/conscrypt/OpenSSLKey;->ctx:Lcom/android/org/conscrypt/NativeRef$EVP_PKEY;,lo-prio,max-target-o
@@ -942,6 +954,12 @@ Lcom/android/org/conscrypt/PSSParameters;->engineInit(Ljava/security/spec/Algori
 Lcom/android/org/conscrypt/PSSParameters;->engineInit([B)V,core-platform-api,public-api,sdk,system-api,test-api
 Lcom/android/org/conscrypt/PSSParameters;->engineInit([BLjava/lang/String;)V,core-platform-api,public-api,sdk,system-api,test-api
 Lcom/android/org/conscrypt/PSSParameters;->engineToString()Ljava/lang/String;,core-platform-api,public-api,sdk,system-api,test-api
+Lcom/android/org/conscrypt/PakeKeyManagerFactory;->engineGetKeyManagers()[Ljavax/net/ssl/KeyManager;,core-platform-api,public-api,sdk,system-api,test-api
+Lcom/android/org/conscrypt/PakeKeyManagerFactory;->engineInit(Ljava/security/KeyStore;[C)V,core-platform-api,public-api,sdk,system-api,test-api
+Lcom/android/org/conscrypt/PakeKeyManagerFactory;->engineInit(Ljavax/net/ssl/ManagerFactoryParameters;)V,core-platform-api,public-api,sdk,system-api,test-api
+Lcom/android/org/conscrypt/PakeTrustManagerFactory;->engineGetTrustManagers()[Ljavax/net/ssl/TrustManager;,core-platform-api,public-api,sdk,system-api,test-api
+Lcom/android/org/conscrypt/PakeTrustManagerFactory;->engineInit(Ljava/security/KeyStore;)V,core-platform-api,public-api,sdk,system-api,test-api
+Lcom/android/org/conscrypt/PakeTrustManagerFactory;->engineInit(Ljavax/net/ssl/ManagerFactoryParameters;)V,core-platform-api,public-api,sdk,system-api,test-api
 Lcom/android/org/conscrypt/PeerInfoProvider;-><init>()V,lo-prio,max-target-o
 Lcom/android/org/conscrypt/PeerInfoProvider;->NULL_PEER_INFO_PROVIDER:Lcom/android/org/conscrypt/PeerInfoProvider;,lo-prio,max-target-o
 Lcom/android/org/conscrypt/PeerInfoProvider;->forHostAndPort(Ljava/lang/String;I)Lcom/android/org/conscrypt/PeerInfoProvider;,lo-prio,max-target-o
