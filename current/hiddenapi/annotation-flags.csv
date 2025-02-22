@@ -3,7 +3,6 @@ Lcom/android/org/conscrypt/AbstractConscryptSocket;->getApplicationProtocols()[L
 Lcom/android/org/conscrypt/AbstractConscryptSocket;->getChannelId()[B,max-target-r
 Lcom/android/org/conscrypt/AbstractConscryptSocket;->getHostname()Ljava/lang/String;,max-target-r
 Lcom/android/org/conscrypt/AbstractConscryptSocket;->getHostnameOrIP()Ljava/lang/String;,max-target-r
-Lcom/android/org/conscrypt/AbstractConscryptSocket;->getNpnSelectedProtocol()[B,max-target-r
 Lcom/android/org/conscrypt/AbstractConscryptSocket;->getSoWriteTimeout()I,max-target-r
 Lcom/android/org/conscrypt/AbstractConscryptSocket;->setAlpnProtocols([B)V,max-target-q
 Lcom/android/org/conscrypt/AbstractConscryptSocket;->setAlpnProtocols([Ljava/lang/String;)V,max-target-q
@@ -12,7 +11,6 @@ Lcom/android/org/conscrypt/AbstractConscryptSocket;->setChannelIdEnabled(Z)V,max
 Lcom/android/org/conscrypt/AbstractConscryptSocket;->setChannelIdPrivateKey(Ljava/security/PrivateKey;)V,max-target-r
 Lcom/android/org/conscrypt/AbstractConscryptSocket;->setHandshakeTimeout(I)V,max-target-r
 Lcom/android/org/conscrypt/AbstractConscryptSocket;->setHostname(Ljava/lang/String;)V,max-target-q
-Lcom/android/org/conscrypt/AbstractConscryptSocket;->setNpnProtocols([B)V,max-target-r
 Lcom/android/org/conscrypt/AbstractConscryptSocket;->setSoWriteTimeout(I)V,max-target-r
 Lcom/android/org/conscrypt/AbstractConscryptSocket;->setUseSessionTickets(Z)V,max-target-q
 Lcom/android/org/conscrypt/ClientSessionContext;->getSession(Ljava/lang/String;I)Lcom/android/org/conscrypt/NativeSslSession;,unsupported
@@ -21,12 +19,8 @@ Lcom/android/org/conscrypt/ConscryptEngineSocket;->setHostname(Ljava/lang/String
 Lcom/android/org/conscrypt/ConscryptEngineSocket;->setUseSessionTickets(Z)V,max-target-q
 Lcom/android/org/conscrypt/ConscryptFileDescriptorSocket;->setHostname(Ljava/lang/String;)V,max-target-q
 Lcom/android/org/conscrypt/ConscryptFileDescriptorSocket;->setUseSessionTickets(Z)V,max-target-q
-Lcom/android/org/conscrypt/CustomFeatureFlags;->certificateTransparencyPlatform()Z,unsupported
-Lcom/android/org/conscrypt/FeatureFlags;->certificateTransparencyPlatform()Z,unsupported
-Lcom/android/org/conscrypt/FeatureFlagsImpl;->certificateTransparencyPlatform()Z,unsupported
 Lcom/android/org/conscrypt/FileClientSessionCache$Impl;->getSessionData(Ljava/lang/String;I)[B,unsupported
 Lcom/android/org/conscrypt/FileClientSessionCache;->usingDirectory(Ljava/io/File;)Lcom/android/org/conscrypt/SSLClientSessionCache;,unsupported
-Lcom/android/org/conscrypt/Flags;->certificateTransparencyPlatform()Z,unsupported
 Lcom/android/org/conscrypt/NativeCrypto;->ASN1_TIME_to_Calendar(JLjava/util/Calendar;)V,unsupported
 Lcom/android/org/conscrypt/NativeCrypto;->ASN1_seq_pack_X509([J)[B,unsupported
 Lcom/android/org/conscrypt/NativeCrypto;->ASN1_seq_unpack_X509_bio(J)[J,unsupported
@@ -114,3 +108,15 @@ Lcom/android/org/conscrypt/TrustManagerImpl;->checkServerTrusted([Ljava/security
 Lcom/android/org/conscrypt/TrustedCertificateStore;-><init>()V,unsupported
 Lcom/android/org/conscrypt/TrustedCertificateStore;->getCertificateChain(Ljava/security/cert/X509Certificate;)Ljava/util/List;,unsupported
 Lcom/android/org/conscrypt/X509PublicKey;-><init>(Ljava/lang/String;[B)V,unsupported
+Lcom/android/org/conscrypt/flags/CustomFeatureFlags;->certificateTransparencyCheckservertrustedApi()Z,unsupported
+Lcom/android/org/conscrypt/flags/CustomFeatureFlags;->certificateTransparencyPlatform()Z,unsupported
+Lcom/android/org/conscrypt/flags/CustomFeatureFlags;->spake2plusApi()Z,unsupported
+Lcom/android/org/conscrypt/flags/FeatureFlags;->certificateTransparencyCheckservertrustedApi()Z,unsupported
+Lcom/android/org/conscrypt/flags/FeatureFlags;->certificateTransparencyPlatform()Z,unsupported
+Lcom/android/org/conscrypt/flags/FeatureFlags;->spake2plusApi()Z,unsupported
+Lcom/android/org/conscrypt/flags/FeatureFlagsImpl;->certificateTransparencyCheckservertrustedApi()Z,unsupported
+Lcom/android/org/conscrypt/flags/FeatureFlagsImpl;->certificateTransparencyPlatform()Z,unsupported
+Lcom/android/org/conscrypt/flags/FeatureFlagsImpl;->spake2plusApi()Z,unsupported
+Lcom/android/org/conscrypt/flags/Flags;->certificateTransparencyCheckservertrustedApi()Z,unsupported
+Lcom/android/org/conscrypt/flags/Flags;->certificateTransparencyPlatform()Z,unsupported
+Lcom/android/org/conscrypt/flags/Flags;->spake2plusApi()Z,unsupported
