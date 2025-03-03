@@ -4,7 +4,6 @@ signature,maxTargetSdk,publicAlternatives,trackingBug
 |Lcom/android/org/conscrypt/AbstractConscryptSocket;->getChannelId()[B|,|30|,||,|170729553|
 |Lcom/android/org/conscrypt/AbstractConscryptSocket;->getHostname()Ljava/lang/String;|,|30|,||,|170729553|
 |Lcom/android/org/conscrypt/AbstractConscryptSocket;->getHostnameOrIP()Ljava/lang/String;|,|30|,||,|170729553|
-|Lcom/android/org/conscrypt/AbstractConscryptSocket;->getNpnSelectedProtocol()[B|,|30|,||,|170729553|
 |Lcom/android/org/conscrypt/AbstractConscryptSocket;->getSoWriteTimeout()I|,|30|,||,|170729553|
 |Lcom/android/org/conscrypt/AbstractConscryptSocket;->setAlpnProtocols([B)V|,|29|,|Use {@code javax.net.ssl.SSLParameters#setApplicationProtocols(java.lang.String[])}.|,||
 |Lcom/android/org/conscrypt/AbstractConscryptSocket;->setAlpnProtocols([Ljava/lang/String;)V|,|29|,|Use {@code javax.net.ssl.SSLParameters#setApplicationProtocols(java.lang.String[])}.|,||
@@ -13,7 +12,6 @@ signature,maxTargetSdk,publicAlternatives,trackingBug
 |Lcom/android/org/conscrypt/AbstractConscryptSocket;->setChannelIdPrivateKey(Ljava/security/PrivateKey;)V|,|30|,||,|170729553|
 |Lcom/android/org/conscrypt/AbstractConscryptSocket;->setHandshakeTimeout(I)V|,|30|,||,|170729553|
 |Lcom/android/org/conscrypt/AbstractConscryptSocket;->setHostname(Ljava/lang/String;)V|,|29|,|Use {@code javax.net.ssl.SSLParameters#setServerNames}.|,||
-|Lcom/android/org/conscrypt/AbstractConscryptSocket;->setNpnProtocols([B)V|,|30|,||,|170729553|
 |Lcom/android/org/conscrypt/AbstractConscryptSocket;->setSoWriteTimeout(I)V|,|30|,||,|170729553|
 |Lcom/android/org/conscrypt/AbstractConscryptSocket;->setUseSessionTickets(Z)V|,|29|,|Use {@link android.net.ssl.SSLSockets#setUseSessionTickets}.|,||
 |Lcom/android/org/conscrypt/ClientSessionContext;->getSession(Ljava/lang/String;I)Lcom/android/org/conscrypt/NativeSslSession;|,||,||,||
@@ -22,12 +20,8 @@ signature,maxTargetSdk,publicAlternatives,trackingBug
 |Lcom/android/org/conscrypt/ConscryptEngineSocket;->setUseSessionTickets(Z)V|,|29|,|Use {@link android.net.ssl.SSLSockets#setUseSessionTickets}.|,||
 |Lcom/android/org/conscrypt/ConscryptFileDescriptorSocket;->setHostname(Ljava/lang/String;)V|,|29|,|Use {@code javax.net.ssl.SSLParameters#setServerNames}.|,||
 |Lcom/android/org/conscrypt/ConscryptFileDescriptorSocket;->setUseSessionTickets(Z)V|,|29|,|Use {@link android.net.ssl.SSLSockets#setUseSessionTickets}.|,||
-|Lcom/android/org/conscrypt/CustomFeatureFlags;->certificateTransparencyPlatform()Z|,||,||,||
-|Lcom/android/org/conscrypt/FeatureFlags;->certificateTransparencyPlatform()Z|,||,||,||
-|Lcom/android/org/conscrypt/FeatureFlagsImpl;->certificateTransparencyPlatform()Z|,||,||,||
 |Lcom/android/org/conscrypt/FileClientSessionCache$Impl;->getSessionData(Ljava/lang/String;I)[B|,||,||,||
 |Lcom/android/org/conscrypt/FileClientSessionCache;->usingDirectory(Ljava/io/File;)Lcom/android/org/conscrypt/SSLClientSessionCache;|,||,||,||
-|Lcom/android/org/conscrypt/Flags;->certificateTransparencyPlatform()Z|,||,||,||
 |Lcom/android/org/conscrypt/NativeCrypto;->ASN1_TIME_to_Calendar(JLjava/util/Calendar;)V|,||,||,||
 |Lcom/android/org/conscrypt/NativeCrypto;->ASN1_seq_pack_X509([J)[B|,||,||,||
 |Lcom/android/org/conscrypt/NativeCrypto;->ASN1_seq_unpack_X509_bio(J)[J|,||,||,||
@@ -115,3 +109,15 @@ signature,maxTargetSdk,publicAlternatives,trackingBug
 |Lcom/android/org/conscrypt/TrustedCertificateStore;-><init>()V|,||,||,||
 |Lcom/android/org/conscrypt/TrustedCertificateStore;->getCertificateChain(Ljava/security/cert/X509Certificate;)Ljava/util/List;|,||,||,||
 |Lcom/android/org/conscrypt/X509PublicKey;-><init>(Ljava/lang/String;[B)V|,||,||,||
+|Lcom/android/org/conscrypt/flags/CustomFeatureFlags;->certificateTransparencyCheckservertrustedApi()Z|,||,||,||
+|Lcom/android/org/conscrypt/flags/CustomFeatureFlags;->certificateTransparencyPlatform()Z|,||,||,||
+|Lcom/android/org/conscrypt/flags/CustomFeatureFlags;->spake2plusApi()Z|,||,||,||
+|Lcom/android/org/conscrypt/flags/FeatureFlags;->certificateTransparencyCheckservertrustedApi()Z|,||,||,||
+|Lcom/android/org/conscrypt/flags/FeatureFlags;->certificateTransparencyPlatform()Z|,||,||,||
+|Lcom/android/org/conscrypt/flags/FeatureFlags;->spake2plusApi()Z|,||,||,||
+|Lcom/android/org/conscrypt/flags/FeatureFlagsImpl;->certificateTransparencyCheckservertrustedApi()Z|,||,||,||
+|Lcom/android/org/conscrypt/flags/FeatureFlagsImpl;->certificateTransparencyPlatform()Z|,||,||,||
+|Lcom/android/org/conscrypt/flags/FeatureFlagsImpl;->spake2plusApi()Z|,||,||,||
+|Lcom/android/org/conscrypt/flags/Flags;->certificateTransparencyCheckservertrustedApi()Z|,||,||,||
+|Lcom/android/org/conscrypt/flags/Flags;->certificateTransparencyPlatform()Z|,||,||,||
+|Lcom/android/org/conscrypt/flags/Flags;->spake2plusApi()Z|,||,||,||
