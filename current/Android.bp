@@ -104,6 +104,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/public/conscrypt-coreplatform.srcjar"],
         current_api: "sdk_library/public/conscrypt-coreplatform.txt",
         removed_api: "sdk_library/public/conscrypt-coreplatform-removed.txt",
+        annotations: "sdk_library/public/conscrypt-coreplatform_annotations.zip",
         sdk_version: "none",
     },
 }
@@ -119,6 +120,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/public/conscrypt.module.intra.core.api.srcjar"],
         current_api: "sdk_library/public/conscrypt.module.intra.core.api.txt",
         removed_api: "sdk_library/public/conscrypt.module.intra.core.api-removed.txt",
+        annotations: "sdk_library/public/conscrypt.module.intra.core.api_annotations.zip",
         sdk_version: "none",
     },
 }
