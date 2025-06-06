@@ -140,6 +140,12 @@ license {
     ],
 }
 
+license {
+    name: "conscrypt-module-sdk_opensourcerequest",
+    visibility: ["//visibility:private"],
+    license_text: ["licenses/build/soong/licenses/opensourcerequest"],
+}
+
 cc_prebuilt_library_shared {
     name: "libconscrypt_jni",
     visibility: ["//visibility:public"],
