@@ -684,6 +684,7 @@ Lcom/android/org/conscrypt/OpenSSLX509CRL;->isRevoked(Ljava/security/cert/Certif
 Lcom/android/org/conscrypt/OpenSSLX509CRL;->toString()Ljava/lang/String;,core-platform-api,public-api,system-api,test-api
 Lcom/android/org/conscrypt/OpenSSLX509CRL;->verify(Ljava/security/PublicKey;)V,core-platform-api,public-api,system-api,test-api
 Lcom/android/org/conscrypt/OpenSSLX509CRL;->verify(Ljava/security/PublicKey;Ljava/lang/String;)V,core-platform-api,public-api,system-api,test-api
+Lcom/android/org/conscrypt/OpenSSLX509CRLEntry;->finalize()V,core-platform-api,public-api,system-api,test-api
 Lcom/android/org/conscrypt/OpenSSLX509CRLEntry;->getCriticalExtensionOIDs()Ljava/util/Set;,core-platform-api,public-api,system-api,test-api
 Lcom/android/org/conscrypt/OpenSSLX509CRLEntry;->getEncoded()[B,core-platform-api,public-api,system-api,test-api
 Lcom/android/org/conscrypt/OpenSSLX509CRLEntry;->getExtensionValue(Ljava/lang/String;)[B,core-platform-api,public-api,system-api,test-api
@@ -888,8 +889,7 @@ Lcom/android/org/conscrypt/ct/LogStoreImpl$SystemTimeSupplier;->get()Ljava/lang/
 Lcom/android/org/conscrypt/flags/CustomFeatureFlags$$ExternalSyntheticLambda0;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
 Lcom/android/org/conscrypt/flags/CustomFeatureFlags$$ExternalSyntheticLambda1;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
 Lcom/android/org/conscrypt/flags/CustomFeatureFlags$$ExternalSyntheticLambda2;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
-Lcom/android/org/conscrypt/metrics/StatsLogImpl$1$1;->uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V,core-platform-api,public-api,system-api,test-api
-Lcom/android/org/conscrypt/metrics/StatsLogImpl$1;->newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;,core-platform-api,public-api,system-api,test-api
-Lcom/android/org/conscrypt/metrics/StatsLogImpl$2;->run()V,core-platform-api,public-api,system-api,test-api
-Lcom/android/org/conscrypt/metrics/StatsLogImpl$3;->run()V,core-platform-api,public-api,system-api,test-api
-Lcom/android/org/conscrypt/metrics/StatsLogImpl$4;->run()V,core-platform-api,public-api,system-api,test-api
+Lcom/android/org/conscrypt/flags/CustomFeatureFlags$$ExternalSyntheticLambda3;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
+Lcom/android/org/conscrypt/net/flags/CustomFeatureFlags$$ExternalSyntheticLambda0;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
+Lcom/android/org/conscrypt/net/flags/CustomFeatureFlags$$ExternalSyntheticLambda1;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
+Lcom/android/org/conscrypt/net/flags/CustomFeatureFlags$$ExternalSyntheticLambda2;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
