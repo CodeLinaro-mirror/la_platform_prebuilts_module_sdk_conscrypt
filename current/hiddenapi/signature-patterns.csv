@@ -1,3 +1,3 @@
-android/conscrypt/nsc/**
 android/net/ssl/**
+android/security/**
 com/android/org/conscrypt/**
