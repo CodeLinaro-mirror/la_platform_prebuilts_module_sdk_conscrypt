@@ -6,7 +6,7 @@
   <compat-change enableAfterTargetSdk="36" id="419020719" name="ENABLE_DEFAULT_ENCRYPTED_CLIENT_HELLO">
     <meta-data definedIn="android.security.net.config.NetworkSecurityConfig" />
   </compat-change>
-  <compat-change enableAfterTargetSdk="10000" id="415007211" name="DEPRECATE_USES_CLEARTEXT_TRAFFIC">
+  <compat-change disabled="true" id="415007211" name="DEPRECATE_USES_CLEARTEXT_TRAFFIC">
     <meta-data definedIn="android.security.net.config.ManifestConfigSource" />
   </compat-change>
 </config>
