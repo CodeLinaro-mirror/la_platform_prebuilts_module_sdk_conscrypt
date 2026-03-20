@@ -1,15 +1,13 @@
 signature,maxTargetSdk,publicAlternatives,trackingBug
+|Landroid/security/net/config/RootTrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;|,||,||,||
 |Lcom/android/org/conscrypt/AbstractConscryptSocket;->getAlpnSelectedProtocol()[B|,|29|,|Use {@code javax.net.ssl.SSLSocket#getApplicationProtocol()}.|,||
 |Lcom/android/org/conscrypt/AbstractConscryptSocket;->getApplicationProtocols()[Ljava/lang/String;|,|29|,|Use {@code javax.net.ssl.SSLParameters#getApplicationProtocols()}.|,||
-|Lcom/android/org/conscrypt/AbstractConscryptSocket;->getChannelId()[B|,|30|,||,|170729553|
 |Lcom/android/org/conscrypt/AbstractConscryptSocket;->getHostname()Ljava/lang/String;|,|30|,||,|170729553|
 |Lcom/android/org/conscrypt/AbstractConscryptSocket;->getHostnameOrIP()Ljava/lang/String;|,|30|,||,|170729553|
 |Lcom/android/org/conscrypt/AbstractConscryptSocket;->getSoWriteTimeout()I|,|30|,||,|170729553|
 |Lcom/android/org/conscrypt/AbstractConscryptSocket;->setAlpnProtocols([B)V|,|29|,|Use {@code javax.net.ssl.SSLParameters#setApplicationProtocols(java.lang.String[])}.|,||
 |Lcom/android/org/conscrypt/AbstractConscryptSocket;->setAlpnProtocols([Ljava/lang/String;)V|,|29|,|Use {@code javax.net.ssl.SSLParameters#setApplicationProtocols(java.lang.String[])}.|,||
 |Lcom/android/org/conscrypt/AbstractConscryptSocket;->setApplicationProtocols([Ljava/lang/String;)V|,|29|,|Use {@code javax.net.ssl.SSLParameters#setApplicationProtocols(java.lang.String[])}.|,||
-|Lcom/android/org/conscrypt/AbstractConscryptSocket;->setChannelIdEnabled(Z)V|,|30|,||,|170729553|
-|Lcom/android/org/conscrypt/AbstractConscryptSocket;->setChannelIdPrivateKey(Ljava/security/PrivateKey;)V|,|30|,||,|170729553|
 |Lcom/android/org/conscrypt/AbstractConscryptSocket;->setHandshakeTimeout(I)V|,|30|,||,|170729553|
 |Lcom/android/org/conscrypt/AbstractConscryptSocket;->setHostname(Ljava/lang/String;)V|,|29|,|Use {@code javax.net.ssl.SSLParameters#setServerNames}.|,||
 |Lcom/android/org/conscrypt/AbstractConscryptSocket;->setSoWriteTimeout(I)V|,|30|,||,|170729553|
@@ -84,14 +82,12 @@ signature,maxTargetSdk,publicAlternatives,trackingBug
 |Lcom/android/org/conscrypt/OpenSSLSocketFactoryImpl;-><init>()V|,||,||,||
 |Lcom/android/org/conscrypt/OpenSSLSocketFactoryImpl;->sslParameters:Lcom/android/org/conscrypt/SSLParametersImpl;|,||,||,||
 |Lcom/android/org/conscrypt/OpenSSLSocketImpl;->getAlpnSelectedProtocol()[B|,|29|,|Use {@code javax.net.ssl.SSLSocket#getApplicationProtocol()}.|,||
-|Lcom/android/org/conscrypt/OpenSSLSocketImpl;->getChannelId()[B|,|30|,||,|170729553|
 |Lcom/android/org/conscrypt/OpenSSLSocketImpl;->getHostname()Ljava/lang/String;|,|30|,||,|170729553|
 |Lcom/android/org/conscrypt/OpenSSLSocketImpl;->getHostnameOrIP()Ljava/lang/String;|,|30|,||,|170729553|
 |Lcom/android/org/conscrypt/OpenSSLSocketImpl;->getNpnSelectedProtocol()[B|,||,||,||
 |Lcom/android/org/conscrypt/OpenSSLSocketImpl;->getSoWriteTimeout()I|,|30|,||,|170729553|
 |Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setAlpnProtocols([B)V|,|29|,|Use {@code javax.net.ssl.SSLParameters#setApplicationProtocols(java.lang.String[])}.|,||
 |Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setAlpnProtocols([Ljava/lang/String;)V|,|29|,|Use {@code javax.net.ssl.SSLParameters#setApplicationProtocols(java.lang.String[])}.|,||
-|Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setChannelIdEnabled(Z)V|,|30|,||,|170729553|
 |Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setChannelIdPrivateKey(Ljava/security/PrivateKey;)V|,|30|,||,|170729553|
 |Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setHandshakeTimeout(I)V|,|30|,||,|170729553|
 |Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setHostname(Ljava/lang/String;)V|,|29|,|Use {@code javax.net.ssl.SSLParameters#setServerNames}.|,||
