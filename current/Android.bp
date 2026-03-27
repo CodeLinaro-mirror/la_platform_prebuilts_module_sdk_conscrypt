@@ -9,6 +9,8 @@ package {
 apex_contributions_defaults {
     name: "conscrypt-module-sdk.contributions",
     contents: [
+        "prebuilt_framework-conscrypt-nsc-compat-config",
+        "prebuilt_framework-conscrypt-nsc",
         "prebuilt_conscrypt.module.public.api",
         "prebuilt_conscrypt.module.platform.api",
         "prebuilt_conscrypt.module.intra.core.api",
@@ -21,7 +23,10 @@ prebuilt_bootclasspath_fragment {
     visibility: ["//visibility:public"],
     apex_available: ["com.android.conscrypt"],
     licenses: ["conscrypt-module-sdk_external_conscrypt_license"],
-    contents: ["conscrypt"],
+    contents: [
+        "conscrypt",
+        "framework-conscrypt-nsc",
+    ],
     fragments: [
         {
             apex: "com.android.art",
@@ -32,7 +37,13 @@ prebuilt_bootclasspath_fragment {
         stub_libs: ["conscrypt.module.public.api"],
     },
     core_platform_api: {
-        stub_libs: ["conscrypt.module.platform.api"],
+        stub_libs: [
+            "conscrypt.module.platform.api",
+            "framework-conscrypt-nsc.stubs.module_lib",
+        ],
+    },
+    dex_preopt: {
+        profile_guided: true,
     },
     hidden_api: {
         max_target_o_low_priority: ["hiddenapi/hiddenapi-max-target-o-low-priority.txt"],
@@ -43,6 +54,13 @@ prebuilt_bootclasspath_fragment {
         filtered_stub_flags: "hiddenapi/filtered-stub-flags.csv",
         filtered_flags: "hiddenapi/filtered-flags.csv",
     },
+}
+
+prebuilt_platform_compat_config {
+    name: "framework-conscrypt-nsc-compat-config",
+    visibility: ["//visibility:public"],
+    licenses: ["conscrypt-module-sdk_external_conscrypt_license"],
+    metadata: "compat_configs/framework-conscrypt-nsc-compat-config/framework-conscrypt-nsc-compat-config_meta.xml",
 }
 
 java_import {
@@ -59,6 +77,42 @@ java_import {
         "android.net.ssl",
         "com.android.org.conscrypt",
     ],
+}
+
+java_sdk_library_import {
+    name: "framework-conscrypt-nsc",
+    visibility: ["//visibility:public"],
+    apex_available: ["com.android.conscrypt"],
+    licenses: ["conscrypt-module-sdk_external_conscrypt_license"],
+    shared_library: false,
+    permitted_packages: [
+        "android.security",
+        "com.android.org.conscrypt.net.flags",
+    ],
+    public: {
+        jars: ["sdk_library/public/framework-conscrypt-nsc-stubs.jar"],
+        stub_srcs: ["sdk_library/public/framework-conscrypt-nsc.srcjar"],
+        current_api: "sdk_library/public/framework-conscrypt-nsc.txt",
+        removed_api: "sdk_library/public/framework-conscrypt-nsc-removed.txt",
+        annotations: "sdk_library/public/framework-conscrypt-nsc_annotations.zip",
+        sdk_version: "module_current",
+    },
+    system: {
+        jars: ["sdk_library/system/framework-conscrypt-nsc-stubs.jar"],
+        stub_srcs: ["sdk_library/system/framework-conscrypt-nsc.srcjar"],
+        current_api: "sdk_library/system/framework-conscrypt-nsc.txt",
+        removed_api: "sdk_library/system/framework-conscrypt-nsc-removed.txt",
+        annotations: "sdk_library/system/framework-conscrypt-nsc_annotations.zip",
+        sdk_version: "module_current",
+    },
+    module_lib: {
+        jars: ["sdk_library/module-lib/framework-conscrypt-nsc-stubs.jar"],
+        stub_srcs: ["sdk_library/module-lib/framework-conscrypt-nsc.srcjar"],
+        current_api: "sdk_library/module-lib/framework-conscrypt-nsc.txt",
+        removed_api: "sdk_library/module-lib/framework-conscrypt-nsc-removed.txt",
+        annotations: "sdk_library/module-lib/framework-conscrypt-nsc_annotations.zip",
+        sdk_version: "module_current",
+    },
 }
 
 java_sdk_library_import {
