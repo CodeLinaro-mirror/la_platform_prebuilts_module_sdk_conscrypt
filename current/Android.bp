@@ -42,6 +42,9 @@ prebuilt_bootclasspath_fragment {
             "framework-conscrypt-nsc.stubs.module_lib",
         ],
     },
+    dex_preopt: {
+        profile_guided: true,
+    },
     hidden_api: {
         max_target_o_low_priority: ["hiddenapi/hiddenapi-max-target-o-low-priority.txt"],
         annotation_flags: "hiddenapi/annotation-flags.csv",
