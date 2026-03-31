@@ -1,3 +1,6 @@
-android/conscrypt/nsc/**
 android/net/ssl/**
+android/security/NetworkSecurityPolicy
+android/security/OverlayNetworkSecurityPolicy
+android/security/conscrypt/**
+android/security/net/config/**
 com/android/org/conscrypt/**

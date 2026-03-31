@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<config>
+  <compat-change enableAfterTargetSdk="36" id="407952621" name="DEFAULT_ENABLE_CERTIFICATE_TRANSPARENCY">
+    <meta-data definedIn="android.security.net.config.NetworkSecurityConfig" />
+  </compat-change>
+  <compat-change enableAfterTargetSdk="36" id="419020719" name="ENABLE_DEFAULT_ENCRYPTED_CLIENT_HELLO">
+    <meta-data definedIn="android.security.net.config.NetworkSecurityConfig" />
+  </compat-change>
+  <compat-change disabled="true" id="415007211" name="DEPRECATE_USES_CLEARTEXT_TRAFFIC">
+    <meta-data definedIn="android.security.net.config.ManifestConfigSource" />
+  </compat-change>
+</config>
