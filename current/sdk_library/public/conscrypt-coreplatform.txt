@@ -62,6 +62,8 @@ package com.android.org.conscrypt {
   public interface ConscryptX509TrustManager {
     method public java.util.List<java.security.cert.X509Certificate> checkServerTrusted(java.security.cert.X509Certificate[], String, String) throws java.security.cert.CertificateException;
     method public java.util.List<java.security.cert.X509Certificate> checkServerTrusted(java.security.cert.X509Certificate[], byte[], byte[], String, String) throws java.security.cert.CertificateException;
+    method public default com.android.org.conscrypt.ConscryptNetworkSecurityPolicy getNetworkSecurityPolicy();
+    method public default void setNetworkSecurityPolicy(com.android.org.conscrypt.ConscryptNetworkSecurityPolicy);
   }
 
   public final class FileClientSessionCache {

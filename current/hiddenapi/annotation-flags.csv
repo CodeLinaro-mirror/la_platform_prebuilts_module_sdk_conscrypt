@@ -15,8 +15,6 @@ Lcom/android/org/conscrypt/ClientSessionContext;->getSession(Ljava/lang/String;I
 Lcom/android/org/conscrypt/ClientSessionContext;->setPersistentCache(Lcom/android/org/conscrypt/SSLClientSessionCache;)V,unsupported
 Lcom/android/org/conscrypt/ConscryptEngineSocket;->setHostname(Ljava/lang/String;)V,max-target-q
 Lcom/android/org/conscrypt/ConscryptEngineSocket;->setUseSessionTickets(Z)V,max-target-q
-Lcom/android/org/conscrypt/ConscryptFileDescriptorSocket;->setHostname(Ljava/lang/String;)V,max-target-q
-Lcom/android/org/conscrypt/ConscryptFileDescriptorSocket;->setUseSessionTickets(Z)V,max-target-q
 Lcom/android/org/conscrypt/FileClientSessionCache$Impl;->getSessionData(Ljava/lang/String;I)[B,unsupported
 Lcom/android/org/conscrypt/FileClientSessionCache;->usingDirectory(Ljava/io/File;)Lcom/android/org/conscrypt/SSLClientSessionCache;,unsupported
 Lcom/android/org/conscrypt/NativeCrypto;->ASN1_TIME_to_Calendar(JLjava/util/Calendar;)V,unsupported
@@ -69,7 +67,6 @@ Lcom/android/org/conscrypt/OpenSSLBIOInputStream;-><init>(Ljava/io/InputStream;Z
 Lcom/android/org/conscrypt/OpenSSLBIOInputStream;->getBioContext()J,unsupported
 Lcom/android/org/conscrypt/OpenSSLBIOInputStream;->release()V,unsupported
 Lcom/android/org/conscrypt/OpenSSLContextImpl$TLSv12;-><init>()V,unsupported
-Lcom/android/org/conscrypt/OpenSSLContextImpl;-><init>()V,unsupported
 Lcom/android/org/conscrypt/OpenSSLContextImpl;->getPreferred()Lcom/android/org/conscrypt/OpenSSLContextImpl;,unsupported
 Lcom/android/org/conscrypt/OpenSSLKey;-><init>(J)V,unsupported
 Lcom/android/org/conscrypt/OpenSSLKey;->fromPrivateKey(Ljava/security/PrivateKey;)Lcom/android/org/conscrypt/OpenSSLKey;,unsupported
