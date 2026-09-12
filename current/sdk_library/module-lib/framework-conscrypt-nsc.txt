@@ -4,7 +4,6 @@ package android.security {
   public class NetworkSecurityPolicy {
     method public void handleTrustStorageUpdate();
     method public void setCleartextTrafficPermitted(boolean);
-    method @NonNull public com.android.org.conscrypt.ConscryptNetworkSecurityPolicy toConscryptNetworkSecurityPolicy();
   }
 
 }

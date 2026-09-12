@@ -9,45 +9,8 @@ package android.security {
     method public boolean isCleartextTrafficPermitted(@Nullable String);
     field public static final int DOMAIN_ENCRYPTION_MODE_DISABLED = 1; // 0x1
     field public static final int DOMAIN_ENCRYPTION_MODE_ENABLED = 3; // 0x3
-    field @Deprecated public static final int DOMAIN_ENCRYPTION_MODE_OPPORTUNISTIC = 2; // 0x2
-    field public static final int DOMAIN_ENCRYPTION_MODE_REQUIRED = 4; // 0x4
+    field public static final int DOMAIN_ENCRYPTION_MODE_OPPORTUNISTIC = 2; // 0x2
     field public static final int DOMAIN_ENCRYPTION_MODE_UNKNOWN = 0; // 0x0
-  }
-
-  public static final class NetworkSecurityPolicy.Builder {
-    ctor public NetworkSecurityPolicy.Builder(@NonNull android.content.Context, boolean);
-    ctor public NetworkSecurityPolicy.Builder(@NonNull android.content.Context);
-    method @NonNull public android.security.NetworkSecurityPolicy.Builder addDomainConfig(@NonNull android.security.net.config.Domain, @NonNull android.security.net.config.NetworkSecurityConfig);
-    method @NonNull public android.security.NetworkSecurityPolicy build();
-    method @NonNull public android.security.NetworkSecurityPolicy.Builder setBaseConfig(@NonNull android.security.net.config.NetworkSecurityConfig);
-    method @NonNull public android.security.NetworkSecurityPolicy.Builder setLocalhostConfig(@NonNull android.security.net.config.NetworkSecurityConfig);
-  }
-
-}
-
-package android.security.net.config {
-
-  public final class Domain {
-    ctor public Domain(@NonNull String, boolean);
-    method @NonNull public String getHostname();
-    method public boolean isLocalhost();
-  }
-
-  public final class NetworkSecurityConfig {
-    method @Nullable public static android.security.net.config.NetworkSecurityConfig createBaseConfig(@NonNull android.content.Context);
-    method @NonNull public static android.security.net.config.NetworkSecurityConfig createLocalhostConfig();
-    method public int getDomainEncryptionMode();
-    method public boolean isCertificateTransparencyVerificationRequired();
-    method public boolean isCleartextTrafficPermitted();
-  }
-
-  public static final class NetworkSecurityConfig.Builder {
-    ctor public NetworkSecurityConfig.Builder();
-    ctor public NetworkSecurityConfig.Builder(@NonNull android.security.net.config.NetworkSecurityConfig);
-    method @NonNull public android.security.net.config.NetworkSecurityConfig build();
-    method @NonNull public android.security.net.config.NetworkSecurityConfig.Builder setCertificateTransparencyVerificationRequired(boolean);
-    method @NonNull public android.security.net.config.NetworkSecurityConfig.Builder setCleartextTrafficPermitted(boolean);
-    method @NonNull public android.security.net.config.NetworkSecurityConfig.Builder setDomainEncryptionMode(int);
   }
 
 }
