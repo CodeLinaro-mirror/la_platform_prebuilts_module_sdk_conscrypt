@@ -16,6 +16,8 @@ Lcom/android/org/conscrypt/ClientSessionContext;->setPersistentCache(Lcom/androi
 Lcom/android/org/conscrypt/ClientSessionContext;->getSession(Ljava/lang/String;I)Lcom/android/org/conscrypt/NativeSslSession;,
 Lcom/android/org/conscrypt/ConscryptEngineSocket;->setHostname(Ljava/lang/String;)V,maxTargetSdk=29&publicAlternatives=%22Use+%7B%40code+javax.net.ssl.SSLParameters%23setServerNames%7D.%22
 Lcom/android/org/conscrypt/ConscryptEngineSocket;->setUseSessionTickets(Z)V,maxTargetSdk=29&publicAlternatives=%22Use+%7B%40link+android.net.ssl.SSLSockets%23setUseSessionTickets%7D.%22
+Lcom/android/org/conscrypt/ConscryptFileDescriptorSocket;->setUseSessionTickets(Z)V,maxTargetSdk=29&publicAlternatives=%22Use+%7B%40link+android.net.ssl.SSLSockets%23setUseSessionTickets%7D.%22
+Lcom/android/org/conscrypt/ConscryptFileDescriptorSocket;->setHostname(Ljava/lang/String;)V,maxTargetSdk=29&publicAlternatives=%22Use+%7B%40code+javax.net.ssl.SSLParameters%23setServerNames%7D.%22
 Lcom/android/org/conscrypt/FileClientSessionCache$Impl;->getSessionData(Ljava/lang/String;I)[B,
 Lcom/android/org/conscrypt/FileClientSessionCache;->usingDirectory(Ljava/io/File;)Lcom/android/org/conscrypt/SSLClientSessionCache;,
 Lcom/android/org/conscrypt/NativeCrypto;->EVP_PKEY_new_RSA([B[B[B[B[B[B[B[B)J,
@@ -69,6 +71,7 @@ Lcom/android/org/conscrypt/OpenSSLBIOInputStream;->getBioContext()J,
 Lcom/android/org/conscrypt/OpenSSLBIOInputStream;->release()V,
 Lcom/android/org/conscrypt/OpenSSLContextImpl$TLSv12;-><init>()V,
 Lcom/android/org/conscrypt/OpenSSLContextImpl;->getPreferred()Lcom/android/org/conscrypt/OpenSSLContextImpl;,
+Lcom/android/org/conscrypt/OpenSSLContextImpl;-><init>()V,
 Lcom/android/org/conscrypt/OpenSSLKey;-><init>(J)V,
 Lcom/android/org/conscrypt/OpenSSLKey;->getNativeRef()Lcom/android/org/conscrypt/NativeRef$EVP_PKEY;,
 Lcom/android/org/conscrypt/OpenSSLKey;->fromPrivateKey(Ljava/security/PrivateKey;)Lcom/android/org/conscrypt/OpenSSLKey;,

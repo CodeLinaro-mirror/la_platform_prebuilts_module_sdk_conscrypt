@@ -16,6 +16,8 @@ signature,maxTargetSdk,publicAlternatives,trackingBug
 |Lcom/android/org/conscrypt/ClientSessionContext;->setPersistentCache(Lcom/android/org/conscrypt/SSLClientSessionCache;)V|,||,||,||
 |Lcom/android/org/conscrypt/ConscryptEngineSocket;->setHostname(Ljava/lang/String;)V|,|29|,|Use {@code javax.net.ssl.SSLParameters#setServerNames}.|,||
 |Lcom/android/org/conscrypt/ConscryptEngineSocket;->setUseSessionTickets(Z)V|,|29|,|Use {@link android.net.ssl.SSLSockets#setUseSessionTickets}.|,||
+|Lcom/android/org/conscrypt/ConscryptFileDescriptorSocket;->setHostname(Ljava/lang/String;)V|,|29|,|Use {@code javax.net.ssl.SSLParameters#setServerNames}.|,||
+|Lcom/android/org/conscrypt/ConscryptFileDescriptorSocket;->setUseSessionTickets(Z)V|,|29|,|Use {@link android.net.ssl.SSLSockets#setUseSessionTickets}.|,||
 |Lcom/android/org/conscrypt/FileClientSessionCache$Impl;->getSessionData(Ljava/lang/String;I)[B|,||,||,||
 |Lcom/android/org/conscrypt/FileClientSessionCache;->usingDirectory(Ljava/io/File;)Lcom/android/org/conscrypt/SSLClientSessionCache;|,||,||,||
 |Lcom/android/org/conscrypt/NativeCrypto;->ASN1_TIME_to_Calendar(JLjava/util/Calendar;)V|,||,||,||
@@ -68,6 +70,7 @@ signature,maxTargetSdk,publicAlternatives,trackingBug
 |Lcom/android/org/conscrypt/OpenSSLBIOInputStream;->getBioContext()J|,||,||,||
 |Lcom/android/org/conscrypt/OpenSSLBIOInputStream;->release()V|,||,||,||
 |Lcom/android/org/conscrypt/OpenSSLContextImpl$TLSv12;-><init>()V|,||,||,||
+|Lcom/android/org/conscrypt/OpenSSLContextImpl;-><init>()V|,||,||,||
 |Lcom/android/org/conscrypt/OpenSSLContextImpl;->getPreferred()Lcom/android/org/conscrypt/OpenSSLContextImpl;|,||,||,||
 |Lcom/android/org/conscrypt/OpenSSLKey;-><init>(J)V|,||,||,||
 |Lcom/android/org/conscrypt/OpenSSLKey;->fromPrivateKey(Ljava/security/PrivateKey;)Lcom/android/org/conscrypt/OpenSSLKey;|,||,||,||
